@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>T-Shirt - MyMarket</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body, html {
+      height: 100%; 
+      margin: 0; 
+    }
+    .navbar-brand-logo {
+      height: 40px; 
+    }
+    .footer {
+      background-color: #f8f9fa;
+      padding: 10px 0;
+      text-align: center;
+      margin-top: auto; /* Push footer to the bottom */
+    }
+    .product-image {
+      width: 100%; /* Make the image responsive */
+    }
+    .buy-button {
+      width: 100%; /* Make the buy button full width */
+    }
+  </style>
+</head>
+<body class="d-flex flex-column">
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="MainPage.html">
+    <img src="MyMarket logo.png" class="navbar-brand-logo">
+    MyMarket
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+  </div>
+</nav>
+
+<!-- Main Content -->
+<div class="container mt-4 flex-grow-1">
+  <div class="row">
+    <div class="col-md-6">
+      <img src="redtshirt.png" class="product-image" alt="T-Shirt">
+    </div>
+    <div class="col-md-6">
+      <h2>Red T-Shirt</h2>
+      <p class="text-muted">Product Code: XYZ124</p>
+      <h3>$24.99</h3>
+      <p>Oversize red T-Shirt made of best materials. Dont think just buy!</p>
+      <div class="d-grid gap-2">
+        <button class="btn btn-primary buy-button" type="button">Buy Now</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <span>&copy; 2023 MyMarket. All rights reserved.</span>
+  </div>
+</footer>
+
+<!-- scripts -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

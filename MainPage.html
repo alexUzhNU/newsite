@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MyMarket</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body, html {
+      height: 100%; 
+      margin: 0; 
+    }
+    .navbar-brand-logo {
+      height: 40px; 
+    }
+    .footer {
+      background-color: #f8f9fa;
+      padding: 10px 0;
+      text-align: center;
+      margin-top: auto; /* Push footer to the bottom */
+    }
+  </style>
+</head>
+<body class="d-flex flex-column">
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="MainPage.html">
+    <img src="MyMarket logo.png" class="navbar-brand-logo">
+    MyMarket
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+  </div>
+</nav>
+
+<!-- Products -->
+<div class="container mt-4 flex-grow-1">
+  <h1>Welcome to MyMarket</h1>
+  <p>Find the best products here...</p>
+  <!-- Product Cards in a single row -->
+  <div class="row">
+    <!-- Product Card -->
+    <div class="col-sm-4">
+      <div class="card">
+        <img src="t-shirt1.jfif" class="card-img-top" alt="T-Shirt">
+        <div class="card-body">
+          <h5 class="card-title">Black T-Shirt</h5>
+          <p class="card-text">Best super fit black T-Shirt on a market</p>
+          <a href="Blackshirt.html" class="btn btn-primary">More...</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-4">
+      <div class="card">
+        <img src="redtshirt.png" class="card-img-top" alt="T-Shirt">
+        <div class="card-body">
+          <h5 class="card-title">Red T-Shirt</h5>
+          <p class="card-text">Best super fit red T-Shirt on a market</p>
+          <a href="Redshirt.html" class="btn btn-primary">More...</a>
+        </div>
+      </div>
+    </div>
+    <!-- End of products -->
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <span>&copy; 2023 MyMarket. All rights reserved.</span>
+  </div>
+</footer>
+
+<!-- Bootstrap JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
