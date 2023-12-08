@@ -1,83 +1,3 @@
-<!--<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MyMarket</title>
-  <link rel="icon" href="favicon.png" type="image/x-icon">
-  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-  <style>
-    body, html {
-      height: 100%; 
-      margin: 0; 
-    }
-    .navbar-brand-logo {
-      height: 40px; 
-    }
-    .footer {
-      background-color: #f8f9fa;
-      padding: 10px 0;
-      text-align: center;
-      margin-top: auto; /* Push footer to the bottom */
-    }
-  </style>
-</head>
-<body class="d-flex flex-column">
-
-
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="index.html">
-    <img src="MyMarket logo.png" class="navbar-brand-logo">
-    MyMarket
-  </a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNav">
-  </div>
-</nav>
-
-<div class="container mt-4 flex-grow-1">
-  <h1>Welcome to MyMarket</h1>
-  <p>Find the best products here...</p>
-  <div class="row">
-    <div class="col-sm-4">
-      <div class="card">
-        <img src="t-shirt1.jfif" class="card-img-top" alt="T-Shirt">
-        <div class="card-body">
-          <h5 class="card-title">Black T-Shirt</h5>
-          <p class="card-text">Best super fit black T-Shirt on a market</p>
-          <a href="Blackshirt.html" class="btn btn-primary">More...</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-sm-4">
-      <div class="card">
-        <img src="redtshirt.png" class="card-img-top" alt="T-Shirt">
-        <div class="card-body">
-          <h5 class="card-title">Red T-Shirt</h5>
-          <p class="card-text">Best super fit red T-Shirt on a market</p>
-          <a href="Redshirt.html" class="btn btn-primary">More...</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<footer class="footer">
-  <div class="container">
-    <span>&copy; 2023 MyMarket. All rights reserved.</span>
-  </div>
-</footer>
-
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-</body>
-</html>
--->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -88,12 +8,12 @@
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
-  <script type='text/javascript' src='unitegallery/js/unitegallery.min.js'></script> 
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script type="text/javascript" src="unitegallery/js/unitegallery.min.js"></script> 
   
-  <link rel='stylesheet' href='unitegallery/css/unite-gallery.css' type='text/css' /> 
-  <script type='text/javascript' src='unitegallery/themes/default/ug-theme-default.js'></script> 
-  <link rel='stylesheet' href='unitegallery/themes/default/ug-theme-default.css' type='text/css' />
+  <link rel="stylesheet" href="unitegallery/css/unite-gallery.css" type="text/css" /> 
+  <script type="text/javascript" src="unitegallery/themes/default/ug-theme-default.js"></script> 
+  <link rel="stylesheet" href="unitegallery/themes/default/ug-theme-default.css" type="text/css" /> 
 
   <style>
     body, html {
@@ -304,7 +224,21 @@
 
   </div>
   
+  <div id="gallery" style="display:none;">
+		
+    <img alt="Image 1 Title" src="winter2.jpg"
+      data-image="winter2.jpg"
+      data-description="Image 1 Description">
+    
+    <img alt="Image 2 Title" src="winter1.avif"
+      data-image="winter1.avif"
+      data-description="Image 2 Description">
 
+              <img alt="Image 2 Title" src="winter3.jpeg"
+      data-image="winter3.jpeg"
+      data-description="Image 2 Description">
+  
+  </div>
 
 <!-- Footer -->
 <footer class="footer">
@@ -315,7 +249,6 @@
 
 <!-- jQuery та jQuery UI -->
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <script type="text/javascript" charset="UTF-8" src="//sinoptik.ua/informers_js.php?title=4&amp;wind=3&amp;cities=303027343&amp;lang=ua"></script>
 <script>
   // jQuery UI Accordion
@@ -334,6 +267,13 @@
   } );
 
   // Додаткові скрипти для UniteGallery та інших компонентів
+</script>
+<script type="text/javascript"> 
+			
+  jQuery(document).ready(function(){ 
+    jQuery("#gallery").unitegallery(); 
+  }); 
+
 </script>
 
 <!-- Bootstrap JS та Popper.js -->
